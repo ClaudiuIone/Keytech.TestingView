@@ -1,0 +1,39 @@
+.features-page .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: var(--tv-red-bright);
+  font-weight: 700;
+}
+
+.features-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.feature-block {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+}
+
+.feature-block h2 {
+  margin: 0 0 0.5rem;
+  color: var(--tv-cream);
+}
+
+.feature-summary {
+  color: var(--tv-cream-muted);
+  margin: 0 0 1rem;
+}
+
+.feature-block ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--tv-cream-muted);
+}
+
+.feature-block li + li {
+  margin-top: 0.35rem;
+}

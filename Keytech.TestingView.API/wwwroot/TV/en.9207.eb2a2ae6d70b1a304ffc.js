@@ -1,0 +1,1 @@
+(self.webpackChunktradingview=self.webpackChunktradingview||[]).push([[9207],{726483(e){e.exports=["Full circles"]},113001(e){e.exports=["change {title} full circles visibility"]}}]);

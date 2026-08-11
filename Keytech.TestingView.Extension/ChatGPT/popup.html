@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 280px;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 14px;
+      background: #1a1a2e;
+      color: #eee;
+      margin: 0;
+    }
+    h3 {
+      margin: 0 0 16px 0;
+      color: #4fc3f7;
+      font-size: 16px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #aaa;
+      font-size: 12px;
+    }
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #333;
+      border-radius: 6px;
+      background: #2a2a4a;
+      color: #fff;
+      font-size: 14px;
+      box-sizing: border-box;
+      margin-bottom: 12px;
+    }
+    input[type="text"]:focus,
+    input[type="number"]:focus {
+      outline: none;
+      border-color: #4fc3f7;
+    }
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    .toggle-label {
+      color: #ccc;
+      font-size: 13px;
+    }
+    .toggle {
+      position: relative;
+      width: 44px;
+      height: 24px;
+    }
+    .toggle input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #444;
+      transition: 0.3s;
+      border-radius: 24px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: #fff;
+      transition: 0.3s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #4fc3f7;
+    }
+    input:checked + .slider:before {
+      transform: translateX(20px);
+    }
+    .status {
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      text-align: center;
+    }
+    .status.active {
+      background: rgba(76, 175, 80, 0.2);
+      color: #81c784;
+    }
+    .status.inactive {
+      background: rgba(244, 67, 54, 0.2);
+      color: #e57373;
+    }
+    .info {
+      margin-top: 12px;
+      padding: 10px;
+      background: rgba(79, 195, 247, 0.1);
+      border-radius: 6px;
+      font-size: 11px;
+      color: #888;
+      line-height: 1.5;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      color: #aaa;
+      font-size: 12px;
+    }
+    .mappings-container {
+      max-height: 150px;
+      overflow-y: auto;
+      margin-bottom: 8px;
+    }
+    .mapping-row {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 6px;
+      align-items: center;
+    }
+    .mapping-row input {
+      margin-bottom: 0;
+      padding: 8px;
+      font-size: 12px;
+    }
+    .mapping-row input.keyword {
+      width: 80px;
+      flex-shrink: 0;
+    }
+    .mapping-row input.symbol {
+      flex: 1;
+    }
+    .mapping-row button {
+      background: rgba(244, 67, 54, 0.3);
+      border: none;
+      color: #e57373;
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .mapping-row button:hover {
+      background: rgba(244, 67, 54, 0.5);
+    }
+    .add-btn {
+      background: rgba(76, 175, 80, 0.2);
+      border: 1px solid rgba(76, 175, 80, 0.4);
+      color: #81c784;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 11px;
+    }
+    .add-btn:hover {
+      background: rgba(76, 175, 80, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <h3>📝 ChatGPT To Notes</h3>
+  
+  <label for="symbol">Default Symbol (this tab)</label>
+  <input type="text" id="symbol" placeholder="e.g., BTCUSD, EURUSD, NQ1!">
+
+  <label for="promptImageCount">Prompt Image Count (this tab)</label>
+  <input type="number" id="promptImageCount" min="1" step="1" placeholder="6">
+  
+  <div class="section-header">
+    <span class="section-title">Symbol Mappings (keyword → symbol)</span>
+    <button class="add-btn" id="addMapping">+ Add</button>
+  </div>
+  <div class="mappings-container" id="mappingsContainer">
+    <!-- Mapping rows added dynamically -->
+  </div>
+  
+  <div class="toggle-container">
+    <span class="toggle-label">Send answers to TradingView</span>
+    <label class="toggle">
+      <input type="checkbox" id="enabled">
+      <span class="slider"></span>
+    </label>
+  </div>
+  
+  <div id="status" class="status inactive">
+    Not configured
+  </div>
+  
+  <div class="info">
+    When enabled, ChatGPT answers will be sent to TestingView. If a keyword is found in the response, it maps to that symbol. Otherwise uses the default for this tab.
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

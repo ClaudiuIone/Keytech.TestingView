@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:05,000
+Want to practice your strategy like it's live?
+On any chart, click TestingView.
+
+2
+00:00:05,000 --> 00:00:07,000
+This is where training becomes measurable.
+
+3
+00:00:08,000 --> 00:00:11,000
+Create a new session, give it a name that you'll recognize later
+
+4
+00:00:12,000 --> 00:00:17,000
+Choose your start date and time,
+the exact moment you want to begin.
+
+5
+00:00:17,000 --> 00:00:23,000
+Set your starting balance and currency,
+so every trade is tracked for real.
+
+6
+00:00:23,000 --> 00:00:27,000
+Let's Start.
+
+7
+00:00:27,000 --> 00:00:32,000
+And just like that, your session is live.
+Balance is on-screen, candles are in-sync.
+
+8
+00:00:33,000 --> 00:00:37,000
+Drive the chart forward, execute your rules,
+and build proof with every session.

@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "TestingView Script Injector",
+  "version": "1.0",
+  "description": "Injects custom script into TradingView",
+  "permissions": [ "scripting", "activeTab" ],
+  "host_permissions": [
+    "https://*.tradingview.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "https://*.tradingview.com/*" ],
+      "js": [ "injector.js" ],
+      "run_at": "document_idle"
+    }
+  ]
+}

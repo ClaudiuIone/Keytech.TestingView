@@ -1,0 +1,177 @@
+.hero {
+  padding-top: 2rem;
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(196, 30, 58, 0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(107, 45, 122, 0.3) 0%, transparent 45%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: var(--tv-red-bright);
+  font-weight: 700;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  margin: 0.5rem 0 1rem;
+  font-weight: 900;
+  color: var(--tv-cream);
+}
+
+.hero-sub {
+  color: var(--tv-cream-muted);
+  font-size: 1.1rem;
+  max-width: 48ch;
+}
+
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  align-items: flex-start;
+}
+
+.hero-desktop {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 22rem;
+}
+
+.desktop-note {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--tv-cream-muted);
+}
+
+.hero-visual img {
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--tv-border);
+}
+
+.video-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.video-tabs button {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--tv-border);
+  background: transparent;
+  color: var(--tv-cream);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.video-tabs button[aria-selected='true'] {
+  background: var(--tv-red);
+  border-color: var(--tv-red);
+}
+
+.preview-video {
+  width: 100%;
+  border-radius: 12px;
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+
+.extend-list {
+  margin: 1.5rem 0 2rem;
+  padding-left: 1.25rem;
+  color: var(--tv-cream-muted);
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.feature-card h3 {
+  margin: 0.75rem 0 0.35rem;
+}
+
+.feature-card p {
+  color: var(--tv-cream-muted);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.deep-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.deep-grid h3 {
+  margin-top: 0;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.pricing-card {
+  text-align: center;
+  position: relative;
+}
+
+.pricing-card.recommended {
+  border-color: var(--tv-red);
+  box-shadow: 0 0 0 1px var(--tv-red);
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--tv-red);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.price span {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.trial {
+  color: var(--tv-red-bright);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.pricing-card ul {
+  text-align: left;
+  padding-left: 1.2rem;
+  color: var(--tv-cream-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}

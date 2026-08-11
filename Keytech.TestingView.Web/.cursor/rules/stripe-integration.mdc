@@ -1,0 +1,35 @@
+---
+description: Stripe integration guidance for TestingView (Checkout Sessions, webhooks, secrets)
+globs: Keytech.TestingView.Web/**/{Billing*,Stripe*,*billing*,Program.cs,appsettings*.json,Deploy-LocalIis.ps1}
+alwaysApply: false
+---
+
+# Stripe integration (TestingView)
+
+Apply **stripe-best-practices** when changing payments, billing, or Stripe config.
+
+## Architecture (this project)
+
+- **Checkout**: Stripe Checkout Sessions (`BillingService`), server-side redirect — not Payment Element.
+- **Plans**: Explorer $7.99/mo (7-day trial), Trader $9.99/mo (14-day trial); inline `PriceData` if `ExplorerPriceId` / `TraderPriceId` unset.
+- **Webhooks**: `POST /api/stripe/webhook` — verify `Stripe-Signature` with `Stripe:WebhookSecret`; idempotent via `Web.StripeEvents`.
+- **Events**: `checkout.session.completed`, `customer.subscription.*`, `invoice.payment_succeeded`, `invoice.payment_failed`.
+- **Metadata**: `userId`, `planId`, `planName`, `tradingViewUsername`, `email`.
+
+## Secrets (never commit)
+
+Store in **dotnet user-secrets** or `stripe.local.json` (gitignored); deploy merges into IIS `appsettings.Production.json`:
+
+- `Stripe:SecretKey` — `sk_live_...` (account key) or `sk_org_...` (requires `Stripe:AccountId` / `Stripe-Context`)
+- `Stripe:PublishableKey` — `pk_live_...` (optional for this app)
+- `Stripe:WebhookSecret` — `whsec_...` from Dashboard or webhook create API
+
+## Production / IIS
+
+- After Stripe or billing code changes, run `deploy/Deploy-LocalIis.ps1` as Administrator.
+- Production `Site:BaseUrl` is `https://testingview.com` (Cloudflare terminates TLS; IIS listens on port 80).
+- Stripe webhooks: `https://testingview.com/api/stripe/webhook`.
+
+## MCP
+
+Use the **Stripe MCP** (`get_stripe_account_info`, `stripe_api_execute`, `search_stripe_documentation`) for Dashboard operations; do not paste live secrets into chat or committed files.

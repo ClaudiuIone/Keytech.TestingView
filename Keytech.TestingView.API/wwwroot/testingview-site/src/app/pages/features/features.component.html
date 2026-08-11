@@ -1,0 +1,30 @@
+<section class="features-page">
+  <div class="features-shell">
+    <p class="subtag">Replay | Backtest | Enhance</p>
+    <h1>The TradingView Backtesting Extension</h1>
+    <p class="lede">
+      TestingView.com integrates seamlessly with TradingView and enhances its replay capabilities.
+    </p>
+
+    <h2>Full TradingView Integration: your charts UI, indicators, and layouts</h2>
+    <ul class="intro-list">
+      @for (point of introPoints; track point) {
+        <li>{{ point }}</li>
+      }
+    </ul>
+
+    <h2>Features</h2>
+    <p class="lede small">What makes TestingView.com a fully-fledged, TradingView-powered backtesting tool?</p>
+
+    @for (category of categories; track category.title) {
+      <article class="feature-category">
+        <h3>{{ category.icon }} {{ category.title }}</h3>
+        <ul>
+          @for (point of category.points; track point) {
+            <li>{{ point }}</li>
+          }
+        </ul>
+      </article>
+    }
+  </div>
+</section>

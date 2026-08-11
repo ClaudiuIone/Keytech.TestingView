@@ -1,0 +1,219 @@
+<app-site-header [loggedIn]="!!account" [planName]="account?.planName || ''" />
+
+
+
+<main class="section account-page">
+
+  <div class="container narrow">
+
+    <h1>Account</h1>
+
+
+
+    @if (loading) {
+
+      <p class="muted">Loading account…</p>
+
+    } @else if (!account) {
+
+      @if (error) {
+
+        <p class="alert error" role="alert">{{ error }}</p>
+
+      }
+
+      <div class="card login-card">
+
+        <p>Sign in with Google to manage your TestingView plan and TradingView username.</p>
+
+        <a class="google-signin-btn" [href]="googleLoginHref">
+
+          <span class="google-signin-btn__icon" aria-hidden="true">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20">
+
+              <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+
+              <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.56 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+
+              <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+
+              <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+
+            </svg>
+
+          </span>
+
+          <span class="google-signin-btn__text">Sign in with Google</span>
+
+        </a>
+
+      </div>
+
+    } @else {
+
+      @if (error) {
+
+        <p class="alert error" role="alert">{{ error }}</p>
+
+      }
+
+      @if (success) {
+
+        <p class="alert success" role="status">{{ success }}</p>
+
+      }
+
+
+
+      <div class="card">
+
+        <h2>Subscription</h2>
+
+        <p><strong>Plan:</strong> {{ account.planName }}</p>
+
+        <p><strong>Email:</strong> {{ account.email }}</p>
+
+        @if (account.planExpiration && account.planExpiration !== '0001-01-01T00:00:00+00:00') {
+
+          <p><strong>Renews / expires:</strong> {{ account.planExpiration | date: 'mediumDate' }}</p>
+
+        }
+
+        <div class="actions">
+
+          @if (account.hasStripeCustomer) {
+
+            <button type="button" class="btn btn-outline" (click)="openPortal()">Billing portal</button>
+
+          }
+
+          <button type="button" class="btn btn-outline" [disabled]="loggingOut" (click)="logout()">
+
+            {{ loggingOut ? 'Signing out…' : 'Log out' }}
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="card">
+
+        <h2>TradingView username</h2>
+
+        <p class="muted">Extension access is tied to this TradingView identity.</p>
+
+        <label for="tv-username">TradingView username</label>
+
+        <input id="tv-username" name="username" [(ngModel)]="username" autocomplete="username" />
+
+        <button type="button" class="btn btn-primary" [disabled]="saving" (click)="saveUsername()">
+
+          {{ saving ? 'Saving…' : 'Save username' }}
+
+        </button>
+
+      </div>
+
+    }
+
+  </div>
+
+  @if (account && !loading) {
+
+    <section class="section pricing account-upgrade" aria-labelledby="upgrade-plan-title">
+
+      <div class="container">
+
+        <h2 id="upgrade-plan-title" class="section-title">Upgrade plan</h2>
+
+        <p class="section-lead">Start free with session resume and core backtesting. Upgrade for higher trade limits, break-even, advanced stats, export, and multi-session workflows.</p>
+
+        <div class="pricing-grid">
+
+          @for (plan of plans; track plan.planId) {
+
+            <article class="pricing-card card" [class.recommended]="plan.recommended">
+
+              @if (plan.recommended) {
+
+                <span class="badge">Recommended</span>
+
+              }
+
+              <img [src]="plan.imageUrl" [alt]="plan.name + ' plan'" loading="lazy" width="280" height="160" />
+
+              <h3>{{ plan.name }}</h3>
+
+              <p class="price">
+
+                @if (plan.monthlyPrice === 0) {
+
+                  <span>$0</span>
+
+                } @else {
+
+                  <span>${{ plan.monthlyPrice }}/mo</span>
+
+                }
+
+              </p>
+
+              @if (plan.trialDays) {
+
+                <p class="trial">{{ plan.trialDays }}-day free trial</p>
+
+              }
+
+              <ul>
+
+                @for (b of plan.benefits; track b) {
+
+                  <li>{{ b }}</li>
+
+                }
+
+              </ul>
+
+              <button
+
+                type="button"
+
+                class="btn"
+
+                [class.btn-primary]="plan.recommended"
+
+                [class.btn-outline]="!plan.recommended"
+
+                [disabled]="account.planId === plan.planId || subscribing"
+
+                (click)="choosePlan(plan)"
+
+              >
+
+                {{ planButtonLabel(plan) }}
+
+              </button>
+
+            </article>
+
+          }
+
+        </div>
+
+      </div>
+
+    </section>
+
+  }
+
+</main>
+
+
+
+<app-site-footer />
+
+

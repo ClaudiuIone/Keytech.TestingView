@@ -1,0 +1,33 @@
+<div class="faq-list" role="list">
+  @for (item of items; track item.id) {
+    <article class="faq-item" role="listitem" [id]="'faq-' + item.id">
+      @if (showAnswers) {
+        <h3 class="faq-question">{{ item.question }}</h3>
+        <p class="faq-answer">{{ item.answer }}</p>
+      } @else {
+        <h3>
+          <button
+            type="button"
+            class="faq-trigger"
+            [attr.aria-expanded]="openId === item.id"
+            [attr.aria-controls]="'panel-' + item.id"
+            (click)="toggle(item.id)"
+            (keydown)="onKeydown($event, item.id)"
+          >
+            {{ item.question }}
+            <span class="faq-icon" aria-hidden="true">{{ openId === item.id ? '−' : '+' }}</span>
+          </button>
+        </h3>
+        <div
+          [id]="'panel-' + item.id"
+          class="faq-panel"
+          [class.open]="openId === item.id"
+          role="region"
+          [attr.aria-labelledby]="'faq-' + item.id"
+        >
+          <p>{{ item.answer }}</p>
+        </div>
+      }
+    </article>
+  }
+</div>

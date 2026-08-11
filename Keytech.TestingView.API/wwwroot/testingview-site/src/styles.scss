@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --font-body: 'Manrope', 'Segoe UI', Tahoma, sans-serif;
+  --font-heading: 'Sora', 'Segoe UI', Tahoma, sans-serif;
+
+  --tv-bg-deep: #1d132b;
+  --tv-bg-mid: #301d3a;
+  --tv-bg-indigo: #2f2f56;
+  --tv-card: rgba(50, 26, 57, 0.9);
+  --tv-cream: #eee4c8;
+  --tv-cream-muted: #d7c9a6;
+  --tv-border: #c8ba9b;
+  --tv-footer: #3b4038;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.45;
+  color: var(--tv-cream);
+  background: var(--tv-bg-deep);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--font-heading);
+  line-height: 1.08;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}

@@ -1,0 +1,29 @@
+<section class="pricing-page">
+  <div class="pricing-shell">
+    <h1>Pick the plan that fits your backtesting depth.</h1>
+    <p>
+      TestingView.com scales from focused solo replay to full multi-session analytics.
+      Start light, then unlock advanced journaling and metrics as your workflow matures.
+    </p>
+
+    <div class="pricing-grid">
+      @for (plan of plans; track plan.name) {
+        <article class="plan-card" [class.accent]="plan.accent">
+          <h2>{{ plan.name }}</h2>
+          <div class="price-row">
+            <span class="price">{{ plan.price }}</span>
+            <span class="cadence">{{ plan.cadence }}</span>
+          </div>
+
+          <ul>
+            @for (feature of plan.features; track feature) {
+              <li>{{ feature }}</li>
+            }
+          </ul>
+
+          <a href="#" (click)="$event.preventDefault()" class="plan-cta">Choose {{ plan.name }}</a>
+        </article>
+      }
+    </div>
+  </div>
+</section>

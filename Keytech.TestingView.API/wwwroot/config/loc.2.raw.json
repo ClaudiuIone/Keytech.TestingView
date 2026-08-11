@@ -1,0 +1,299 @@
+0
+0 backtst-column-settings-table
+1 data-column-id
+2 column-drag
+3 drag-handle
+4 <svg width="20" height="100%" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="5" r="1.5"></circle><circle cx="6" cy="12" r="1.5"></circle><circle cx="6" cy="19" r="1.5"></circle><circle cx="12" cy="5" r="1.5"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="12" cy="19" r="1.5"></circle><circle cx="18" cy="5" r="1.5"></circle><circle cx="18" cy="12" r="1.5"></circle><circle cx="18" cy="19" r="1.5"></circle></svg>
+5 column-enable
+6 data-column-name
+7 column-name
+8 column-type
+9 text
+-1 isDragging
+-2 backtst-button-loader
+-3 <svg class="spin" width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" opacity="0.2"></circle><path d="M22 12a10 10 0 0 0-10-10" stroke="currentColor" stroke-width="2" fill="none"></path></svg>
+-4 ebt-spin
+-5 Overtrading
+-6 You have been analyzing for over 1 hour, which may lead to performance issues. Please consider a break to avoid overtrading.
+-7 div[.chart-toolbar] button.apply-common-tooltip[data-name='time-zone-menu'] div.js-button-text
+-8 Current Time div not found!
+
+1
+0 Text
+1 richtext
+2 Rich text
+3 number
+4 Number
+5 bool
+6 Yes/No
+7 date
+8 Date
+9 time
+-1 Trade
+-2 Date/Time
+-3 Price
+-4 Symbol
+-5 Lots
+-6 RR
+-7 Risk
+-8 Profit
+-9 Cumulative profit
+
+2
+0 Time
+1 datetime
+2 Date & time
+3 actions
+4 Actions
+5 edit-select-values
+6 Edit possible values
+7 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="18" height="18"><path fill="currentColor" d="M5 6.4a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM8 6h16V5H8v1Zm-3 8.46a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM8 14h16v-1H8v1Zm-2 7.43a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM24 22H8v-1h16v1Z"></path></svg>
+8 <path fill="currentColor" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Zm-1.17 5.79 3.05 2.92H6.52a.97.97 0 0 0-.97.97v.64c0 .54.43.97.97.97h7.36l-3.05 2.92c-.39.37-.4 1-.01 1.38l.44.44c.38.38 1 .38 1.37 0l5.35-5.34c.38-.38.38-1 0-1.37l-5.35-5.36a.96.96 0 0 0-1.37 0l-.44.44a.97.97 0 0 0 .01 1.39Z"></path>
+9 delete-column
+-1 Run-up
+-2 Drawdown
+-3 Snapshots
+-4 BE Run-up
+-5 Notes
+-6 Analysis Time
+-7 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><path fill='currentColor' d='m21.45 7.55-1.8 1.8a.47.47 0 0 1-.67 0L14.65 5a.47.47 0 0 1 0-.66l1.8-1.8a1.88 1.88 0 0 1 2.65 0l2.35 2.35c.73.73.73 1.91 0 2.65ZM13.1 5.9 2.84 16.15l-.83 4.75a.94.94 0 0 0 1.1 1.09l4.74-.84L18.1 10.9a.47.47 0 0 0 0-.67L13.77 5.9a.47.47 0 0 0-.67 0Zm-6.25 9.37a.54.54 0 0 1 0-.77l6.01-6.01a.54.54 0 0 1 .78 0c.21.21.21.55 0 .77l-6.02 6.01a.54.54 0 0 1-.77 0Zm-1.41 3.29H7.3v1.42l-2.52.44-1.21-1.22.44-2.51h1.42v1.87Z'></path></svg>
+-8 rightAlign
+-9 centerAlign
+
+3
+0 data-values
+1 backtst-actions
+2 <path fill="currentColor" d="M12 4h3v1h-1.04l-.88 9.64a1.5 1.5 0 0 1-1.5 1.36H6.42a1.5 1.5 0 0 1-1.5-1.36L4.05 5H3V4h3v-.5C6 2.67 6.67 2 7.5 2h3c.83 0 1.5.67 1.5 1.5V4ZM7.5 3a.5.5 0 0 0-.5.5V4h4v-.5a.5.5 0 0 0-.5-.5h-3ZM5.05 5l.87 9.55a.5.5 0 0 0 .5.45h5.17a.5.5 0 0 0 .5-.45L12.94 5h-7.9Z"></path>
+3 Specify possible options for {0}, separated by commas:
+4 Option 1, Option 2, Option 3
+5 backtst-column-settings-add-new-column-container
+6 Add new column
+7 dragging
+8 JournalCustomization
+9 New Column
+-1 leftAlign
+-2 backtst-positions-table
+-3 backtst-session
+-4 positions-ui-first-row
+-5 positions-ui-last-row
+-6 justifyStart
+-7 hidden
+-8 V_STATUS
+-9 data-part
+
+4
+0 Feature disabled
+1 Cannot customize journal columns: please upgrade your TestingView.com subscription plan to enable this feature
+2 Are you sure you want to open this {0} position?<n><n>Risk: {1} ({2} lots)
+3 analysis-timer-separator
+4 backtst-session-analysis-timer
+5 backtst-button
+6 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 120 120" width="24" height="24"><polygon points="10,10 10,90 100,50" stroke="white" stroke-width="2" fill="black"></polygon><rect x="22" y="25" width="8" height="50" rx="2" ry="2" fill="white"></rect><rect x="40" y="35" width="8" height="33" rx="2" ry="2" fill="white"></rect><rect x="57" y="20" width="9" height="40" rx="2" ry="2" fill="white" stroke="black" stroke-width="1"></rect></svg>
+7 Please exit Bar Replay mode before starting TestingView.
+8 backtesting-replay-controls
+9 controls-control
+-1 doubleCell
+-2 Entry
+-3 V_EXITDATE
+-4 V_ENTRYDATE
+-5 V_LATESTPRICE
+-6 V_LATESTPRICECURRENCY
+-7 V_RISK
+-8 V_RISKPERCENTAGE
+-9 V_PROFIT
+
+5
+0 controls-button
+1 play-pause-button
+2 Play&#013;Shift + ⇩
+3 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"><path fill="currentColor" fill-rule="evenodd" d="m10.997 6.93 7.834 6.628a.58.58 0 0 1 0 .88l-7.834 6.627c-.359.303-.897.04-.897-.44V7.37c0-.48.538-.743.897-.44Zm8.53 5.749a1.741 1.741 0 0 1 0 2.637l-7.834 6.628c-1.076.91-2.692.119-2.692-1.319V7.37c0-1.438 1.616-2.23 2.692-1.319l7.834 6.628Z"></path></svg>
+4 Pause&#013;Shift + ⇩
+5 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"><path fill="currentColor" fill-rule="evenodd" d="M10 6h2v16h-2V6ZM9 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V6Zm7 0h2v16h-2V6Zm-1 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V6Z"></path></svg>
+6 controls-separator
+7 separator
+8 controls-control-type-forward
+9 forward-button
+-1 V_PROFITPERCENTAGE
+-2 V_CUMULATIVEPROFIT
+-3 V_CUMULATIVEPROFITPERCENTAGE
+-4 V_RUNUP
+-5 V_RUNUPPERCENTAGE
+-6 V_DRAWDOWN
+-7 V_DRAWDOWNPERCENTAGE
+-8 V_BERUNUP
+-9 V_BERUNUPPERCENTAGE
+
+6
+0 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"><path fill="currentColor" fill-rule="evenodd" d="M20 6v16h1V6h-1Zm-3.908 7.628L9.834 7.996A.5.5 0 0 0 9 8.368v11.264a.5.5 0 0 0 .834.372l6.258-5.632a.5.5 0 0 0 0-.744Zm.67 1.487a1.5 1.5 0 0 0 0-2.23l-6.259-5.632C9.538 6.384 8 7.07 8 8.368v11.264c0 1.299 1.538 1.984 2.503 1.115l6.258-5.632Z"></path></svg>
+1 Fast forward&#013;Ctrl + Shift + ⇨
+2 fast-forward-button
+3 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 28" width="36" height="28"><path fill="currentColor" fill-rule="evenodd" d="M8 6.93l7.834 6.628a.58.58 0 0 1 0 .88L8 21.065c-.359.303-.897.04-.897-.44V7.37c0-.48.538-.743.897-.44Zm8.53 5.749a1.741 1.741 0 0 1 0 2.637L8.696 21.944c-1.076.91-2.692.119-2.692-1.319V7.37c0-1.438 1.616-2.23 2.692-1.319l7.834 6.628Z"></path><path fill="currentColor" fill-rule="evenodd" d="M18 6.93l7.834 6.628a.58.58 0 0 1 0 .88L18 21.065c-.359.303-.897.04-.897-.44V7.37c0-.48.538-.743.897-.44Zm8.53 5.749a1.741 1.741 0 0 1 0 2.637L18.696 21.944c-1.076.91-2.692.119-2.692-1.319V7.37c0-1.438 1.616-2.23 2.692-1.319l7.834 6.628Z"></path></svg>
+4 skip-intervals
+5 Fast forward interval
+6 controls-control-type-goto-date
+7 Go to date/time
+8 goto-date-button
+9 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="24"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18.06a8.06 8.06 0 1 1 0-16.12 8.06 8.06 0 0 1 0 16.12Zm2.5-4.2-3.43-2.5a.49.49 0 0 1-.2-.38V6.35c0-.26.22-.48.48-.48h1.3c.26 0 .48.22.48.48v5.72l2.7 1.96c.21.16.25.46.1.68l-.76 1.04a.49.49 0 0 1-.68.1Z"></path></svg>
+-1 View snapshots
+-2 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"><path fill="currentColor" fill-rule="evenodd" d="M3.5 14S7.06 6 14 6c6.94 0 10.5 8 10.5 8S21 22 14 22 3.5 14 3.5 14Zm1.95.5-.27-.5A15.92 15.92 0 0 1 7.28 11C8.9 9.14 11.15 7.5 14 7.5c2.85 0 5.1 1.64 6.72 3.49a16.8 16.8 0 0 1 2.1 3.01 15.9 15.9 0 0 1-2.07 3.01c-1.62 1.85-3.87 3.49-6.75 3.49s-5.13-1.64-6.75-3.49a16.5 16.5 0 0 1-1.8-2.52Zm-.58.11ZM16.5 14a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm1.5 0a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"></path></svg>
+-3 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.118 6a.5.5 0 0 0-.447.276L9.809 8H5.5A1.5 1.5 0 0 0 4 9.5v10A1.5 1.5 0 0 0 5.5 21h16a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 21.5 8h-4.309l-.862-1.724A.5.5 0 0 0 15.882 6h-4.764zm-1.342-.17A1.5 1.5 0 0 1 11.118 5h4.764a1.5 1.5 0 0 1 1.342.83L17.809 7H21.5A2.5 2.5 0 0 1 24 9.5v10a2.5 2.5 0 0 1-2.5 2.5h-16A2.5 2.5 0 0 1 3 19.5v-10A2.5 2.5 0 0 1 5.5 7h3.691l.585-1.17z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 18a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm0 1a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9z"></path></svg>
+-4 <svg class="backtst-loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"><path fill="currentColor" d="M13.88 3.88a1.88 1.88 0 1 1-3.76 0 1.88 1.88 0 0 1 3.76 0ZM12 18.24A1.88 1.88 0 1 0 12 22a1.88 1.88 0 0 0 0-3.75Zm8.13-8.13a1.88 1.88 0 1 0 0 3.76 1.88 1.88 0 0 0 0-3.76ZM5.74 12A1.88 1.88 0 1 0 2 12a1.88 1.88 0 0 0 3.75 0Zm.5 3.87a1.88 1.88 0 1 0 0 3.75 1.88 1.88 0 0 0 0-3.75Zm11.5 0a1.88 1.88 0 1 0 0 3.75 1.88 1.88 0 0 0 0-3.75ZM6.25 4.38a1.87 1.87 0 1 0 0 3.75 1.87 1.87 0 0 0 0-3.75Z"></path></svg>
+-5 snapshot-action-buttons
+-6 Taking the snapshot...
+-7 Take a snapshot
+-8 take-snapshot-button
+-9 take-snapshot-loader
+
+7
+0 backtst-session-balance
+1 backtst-session-balance-balance
+2 backtst-session-balance-balance-label
+3 Balance
+4 backtst-session-balance-balance-value
+5 backtst-session-balance-balance-currency
+6 backtst-session-balance-equity
+7 backtst-session-balance-equity-label
+8 Equity
+9 backtst-session-balance-equity-value
+-1 V_VALUE
+-2 V_POSITION
+-3 ID_
+-4 V_INDEX
+-5 action-buttons
+-6 close-trade-button
+-7 Close trade
+-8 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.9 12.63c.2.18.2.5 0 .68l-1.6 1.6a.48.48 0 0 1-.68 0L12 14.25 9.37 16.9a.48.48 0 0 1-.68 0l-1.6-1.6a.48.48 0 0 1 0-.68L9.75 12 7.1 9.37a.48.48 0 0 1 0-.68l1.6-1.6c.18-.19.49-.19.68 0L12 9.74l2.63-2.64c.18-.2.5-.2.68 0l1.6 1.6c.19.18.19.49 0 .68L14.26 12l2.64 2.63Z"></path></svg>
+-9 show-be-button
+
+8
+0 backtst-session-balance-equity-currency
+1 currency
+2 controls-control-type-review
+3 backtst-review-button
+4 Review mode
+5 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="24"><path fill="currentColor" d="M18.93 12.68v3.84c0 .96-.34 1.78-1.01 2.46A3.33 3.33 0 0 1 15.47 20h-10c-.96 0-1.78-.34-2.45-1.02A3.36 3.36 0 0 1 2 16.52V6.48c0-.96.34-1.78 1.02-2.46A3.33 3.33 0 0 1 5.46 3h10.01c.5 0 .97.1 1.4.3.13.06.2.15.22.28a.38.38 0 0 1-.1.35l-.6.6a.38.38 0 0 1-.27.11c-.03 0-.06 0-.1-.02a2.13 2.13 0 0 0-.55-.07h-10c-.54 0-.99.18-1.37.56-.37.38-.56.84-.56 1.37v10.04c0 .53.19.99.56 1.37.38.38.83.56 1.36.56h10.01c.53 0 .98-.18 1.36-.56.38-.38.56-.84.56-1.37v-3.06c0-.1.04-.2.11-.27l.77-.77a.38.38 0 0 1 .28-.12c.05 0 .1 0 .14.03.16.07.24.18.24.35Zm2.78-5.9-9.79 9.83c-.2.19-.42.29-.68.29-.27 0-.5-.1-.69-.3l-5.17-5.18a.94.94 0 0 1-.29-.7c0-.26.1-.49.29-.68L6.7 8.7c.2-.2.42-.29.69-.29.26 0 .5.1.68.3l3.17 3.17 7.78-7.82c.19-.19.42-.29.68-.29.27 0 .5.1.69.3L21.7 5.4c.2.2.29.43.29.7 0 .26-.1.49-.29.68Z"></path></svg>
+6 controls-control-type-stats
+7 backtst-stats-button
+8 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="24"><path fill="currentColor" d="M15 14.5h1.5c.25 0 .5-.25.5-.5V8.75c0-.25-.25-.5-.5-.5H15c-.25 0-.5.25-.5.5V14c0 .25.25.5.5.5Zm3.75 0h1.5c.25 0 .5-.25.5-.5V5c0-.25-.25-.5-.5-.5h-1.5c-.25 0-.5.25-.5.5v9c0 .25.25.5.5.5Zm-11.25 0H9c.25 0 .5-.25.5-.5v-2.75c0-.25-.25-.5-.5-.5H7.5c-.25 0-.5.25-.5.5V14c0 .25.25.5.5.5Zm3.75 0h1.5c.25 0 .5-.25.5-.5V6.25c0-.25-.25-.5-.5-.5h-1.5c-.25 0-.5.25-.5.5V14c0 .25.25.5.5.5ZM21.38 17H4.5V5.12a.62.62 0 0 0-.63-.62H2.63a.62.62 0 0 0-.62.63v13.12c0 .69.56 1.25 1.25 1.25h18.13c.34 0 .62-.28.62-.63v-1.25a.62.62 0 0 0-.63-.62Z"></path></svg>
+9 controls-control-type-settings
+-1 Set BE level
+-2 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 3.94a8.06 8.06 0 1 1 0 16.12 8.06 8.06 0 0 1 0-16.12ZM12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 6.77a3.23 3.23 0 1 0 0 6.46 3.23 3.23 0 0 0 0-6.46Z"></path></svg>
+-3 hide-be-button
+-4 Remove BE level
+-5 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20ZM6.68 13.61a.49.49 0 0 1-.49-.48v-2.26c0-.27.22-.48.49-.48h10.64c.27 0 .49.21.49.48v2.26c0 .27-.22.48-.49.48H6.68Z"></path></svg>
+-6 openTrade
+-7 Leverage: {0}x
+-8 <svg class="cell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path fill="currentColor" fill-rule="evenodd" d="M3.58 9.5a5.45 5.45 0 0 0 4.92 4.92V16h1v-1.58a5.45 5.45 0 0 0 4.92-4.92H16v-1h-1.58A5.45 5.45 0 0 0 9.5 3.58V2h-1v1.58A5.45 5.45 0 0 0 3.58 8.5H2v1h1.58ZM8.5 6V4.58A4.45 4.45 0 0 0 4.58 8.5H6v1H4.58a4.45 4.45 0 0 0 3.92 3.92V12h1v1.42a4.45 4.45 0 0 0 3.92-3.92H12v-1h1.42A4.45 4.45 0 0 0 9.5 4.58V6h-1Z"></path></svg>
+-9 selected
+
+9
+0 TestingView Settings
+1 backtst-settings-button
+2 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="24" fill="currentColor"><path fill="currentColor" d="m21.3 10.67-2.33-1.58.53-2.78a1.59 1.59 0 0 0-1.85-1.85l-2.77.53-1.57-2.34c-.6-.87-2.03-.87-2.62 0L9.11 5l-2.76-.53A1.58 1.58 0 0 0 4.5 6.32l.53 2.77-2.33 1.58a1.58 1.58 0 0 0 0 2.62l2.33 1.58-.53 2.77a1.58 1.58 0 0 0 1.85 1.86l2.76-.54 1.58 2.34a1.58 1.58 0 0 0 2.62 0l1.57-2.34 2.77.54c.53.1 1.05-.06 1.42-.43.37-.38.53-.9.43-1.42l-.53-2.78 2.33-1.58a1.58 1.58 0 0 0 0-2.62ZM16.9 14l.68 3.56-3.55-.68-2.03 3-2.03-3-3.55.68.69-3.56-3-2.03 3-2.03-.69-3.57 3.56.7 2.02-3 2.03 3 3.55-.7-.69 3.57 3 2.03-3 2.03ZM12 7.94a4.07 4.07 0 1 0 .01 8.14A4.07 4.07 0 0 0 12 7.94Zm0 6.25a2.19 2.19 0 1 1 0-4.38 2.19 2.19 0 0 1 0 4.38Z"></path></svg>
+3 https://js.testingview.com/{0}
+4 Analysis time
+5 isActive
+6 Review mode: click on a position's date (TestingView panel) to replay the trade.
+7 Open position
+8 You cannot enter review mode while having active positions.
+9 chart-controls-bar
+-1 Click entry/exit dates in the TestingView panel to jump to the trade.
+-2 Double click to open the position's chart
+-3 CanModifyPositionQty
+-4 Modifying position quantity is disabled in your current TestingView plan. Please upgrade to enable this feature.
+-5 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><path fill='currentColor' d='m21.45 7.55-1.8 1.8a.47.47 0 0 1-.67 0L14.65 5a.47.47 0 0 1 0-.66l1.8-1.8a1.88 1.88 0 0 1 2.65 0l2.35 2.35c.73.73.73 1.91 0 2.65ZM13.1 5.9 2.84 16.15l-.83 4.75a.94.94 0 0 0 1.1 1.09l4.74-.84L18.1 10.9a.47.47 0 0 0 0-.67L13.77 5.9a.47.47 0 0 0-.67 0Zm-6.25 9.37a.54.54 0 0 1 0-.77l6.01-6.01a.54.54 0 0 1 .78 0c.21.21.21.55 0 .77l-6.02 6.01a.54.54 0 0 1-.77 0Zm-1.41 3.29H7.3v1.42l-2.52.44-1.21-1.22.44-2.51h1.42v1.87Z'></path></svg>
+-6 Exit TestingView mode
+-7 Do you want to exit TestingView mode and refresh chart?
+-8 Saving chart
+-9 Please wait a moment...
+
+-1
+0 5s
+1 30s
+2 1m
+3 5m
+4 15m
+5 30m
+6 1h
+7 2h
+8 4h
+9 1D
+-1 backtst-option-WatchIntegrationPlots
+-2 Automatically stops candle playback when a chart/indicator event occurs (e.g., a new FVG is discovered, an order block was detected, a breakout happens, a news event, etc.).<n><n>Chart events are detected via indicators on your chart (only TestingView-compatible indicators).<n><n>Examples of compatible indicators can be found in the TestingView Learning set of indicators.
+-3 Auto stop on chart events
+-4 Auto stopping candle playback: {0} ({1})
+-5 Stop playback at this price
+-6 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Zm-9.31 4.6 5.46-5.47c.38-.38.38-1 0-1.37l-.69-.68a.96.96 0 0 0-1.36 0l-4.1 4.1-4.1-4.1a.96.96 0 0 0-1.36 0l-.69.68a.96.96 0 0 0 0 1.37l5.46 5.46c.38.38 1 .38 1.38 0Z"></path></svg>
+-7 backtst-column-settings-expand-button
+-8 Expand: show all journal columns
+-9 translate(-50%, -50%)
+
+-2
+0 1W
+1 Step forward {0}<n>Shift + ⇨
+2 Error while executing timer
+3 MoreThan20Trades
+4 UnlimitedTrades
+5 Cannot open more than 20 trades: please upgrade your TestingView.com subscription plan to enable this feature
+6 Cannot open more than 50 trades: please upgrade your TestingView.com subscription plan to enable this feature
+7 No history bars on shape's chart
+8 TestingView is ready. Start from the top toolbar when needed.
+9 CanSetBE
+-1 Your TradingView plan does not support replay on lower timeframes. The timeframe has been switched to Daily (D)
+-2 MoreThan10GotoTimeUsages
+-3 Limit reached
+-4 You have reached the limit of "Go to Time" usages for this session. To increase this limit, please upgrade your TestingView.com plan.
+-5 SlippageAndSpreads
+-6 Trading costs are not available: please upgrade your TestingView.com plan to enable this feature.
+-7 &nbsp;&bull;&nbsp;<a href="https://testingview.com/?utm_source=tradingview&utm_medium=extension&utm_campaign=sessions_screen#comp-m9lbin4x">Upgrade plan</a>
+-8 ui/sessions/{0}/ff-timeframe-resolutions/{1}
+-9 ChronoShuffle™ hop (new day each click)
+
+-3
+0 css/testingview.css
+1 TestingView date
+2 download.dat
+3 div[class*='replayToolbar-']
+4 div[class*='controlsPanel-']
+5 div[class*='controls-']
+6 div.chart-toolbar.chart-controls-bar div[class*='dateRangeExpanded']
+7 data-mouse-click-auto-blur
+8 div[class*='group']
+9 🎲
+-1 Please choose start/end dates to shuffle in
+-2 save-random-session
+-3 ChronoShuffle™
+-4 Start with a random date and continue to shuffle days on each jump/navigation with Go To Date/Time
+-5 backtst-random-range-overlay
+-6 Configure ChronoShuffle™ period range
+-7 (make sure your chart data and TradingView plan supports it)
+-8 date-ranges
+-9 From:
+
+-4
+0 Pick a start date for shuffling (make sure your chart data and TradingView plan supports it)
+1 Pick an end date for shuffling (make sure your chart data and TradingView plan supports it)
+2 random-range-start
+3 random-range-end
+4 random-range-cancel
+5 random-range-save
+6 To:
+7 Start with a random date, and on each <em>Go to Date/Time</em> action, it will jump to a new random date within your selected range.
+8 chronoshuffle-footnote
+9 sellBuyAndPresetsButtons
+
+-5
+0 A new version of TestingView is available. Please refresh the chart page to update.
+1 TP cannot be higher than the current price
+2 TP cannot be lower than the BE level
+3 TP cannot be higher than the BE level
+4 BE level cannot be higher than SL
+5 BE level cannot be higher than TP
+6 BE level cannot be lower than TP
+7 BE level cannot be lower than entry price
+8 BE level cannot be higher than entry price
+9 SL cannot be lower than the current price
+-1 SL cannot be higher than the BE level
+-2 SL cannot be lower than the BE level
+-3 Warning: <b>{0}</b> stepping depends on recorded ticks. If ticks are missing, time will jump to the next available tick (e.g., +2s, +5s).<br>This may affect fast-forwarding by the selected interval (15m, 1h, 2h, etc.)
+-4 min-resolution-warning

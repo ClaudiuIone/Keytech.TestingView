@@ -1,0 +1,95 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(11, 6, 20, 0.92);
+  border-bottom: 1px solid var(--tv-border);
+  backdrop-filter: blur(12px);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--tv-cream);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  font-weight: 600;
+  font-size: 0.92rem;
+  opacity: 0.9;
+}
+
+.nav a:hover,
+.nav a.router-link-active {
+  opacity: 1;
+  color: #fff;
+}
+
+.account-pill {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: var(--tv-purple);
+  font-size: 0.85rem;
+}
+
+.btn-sm {
+  padding: 0.55rem 1rem;
+  font-size: 0.85rem;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--tv-cream);
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    padding: 1rem;
+    background: rgba(11, 6, 20, 0.98);
+    border-bottom: 1px solid var(--tv-border);
+  }
+
+  .header.menu-open .nav {
+    display: flex;
+  }
+}

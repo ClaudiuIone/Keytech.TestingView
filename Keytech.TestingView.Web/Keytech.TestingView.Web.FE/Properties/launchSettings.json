@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Keytech.TestingView.Web.FE": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5130",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

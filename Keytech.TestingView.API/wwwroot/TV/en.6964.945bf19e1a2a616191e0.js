@@ -1,0 +1,1 @@
+(self.webpackChunktradingview=self.webpackChunktradingview||[]).push([[6964,18781,95288],{818781(e){e.exports=["New Update"]},238954(e){e.exports=["TradingView Support Team"]},413665(e){e.exports=["You have received response from TradingView support team. {linkStart}Click here to see it.{linkEnd}"]}}]);

@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <OutputType>WinExe</OutputType>
+	  <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <ApplicationIcon>TV-x-TestingView.ico</ApplicationIcon>
+    <PackageProjectUrl>https://TestingView.com</PackageProjectUrl>
+    <PackageIcon>TV-x-TestingView.png</PackageIcon>
+    <Description>TestingView Desktop Launcher – Enables TestingView features inside TradingView Desktop
+Seamlessly adds the TestingView web app into the TradingView Desktop platform, unlocking full journaling, risk management, and enhanced backtesting tools while preserving native TradingView behavior.</Description>
+    <Copyright>© 2025 TestingView.com. All rights reserved.</Copyright>
+    <AssemblyName>TradingView x TestingView</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="TV-x-TestingView.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Titanium.Web.Proxy" Version="3.2.0" />
+  </ItemGroup>
+
+</Project>

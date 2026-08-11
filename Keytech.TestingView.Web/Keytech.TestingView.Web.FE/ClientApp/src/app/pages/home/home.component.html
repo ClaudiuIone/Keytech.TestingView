@@ -1,0 +1,146 @@
+<app-site-header [loggedIn]="loggedIn" [planName]="planName" />
+
+<main id="home">
+  <section class="hero section" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">TestingView.com</p>
+        <h1 id="hero-title">The TradingView Backtesting Extension</h1>
+        <p class="hero-sub">
+          Backtest your TradingView strategy like it is live — sessions, simulated trades, risk sizing, journaling,
+          and statistics so you can test and refine your approach with evidence on TradingView.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" [href]="site?.extensionUrl || '#'" target="_blank" rel="noopener">Get extension</a>
+          <div class="hero-desktop">
+            <p class="desktop-note">
+              Requires TradingView Desktop already installed. TestingView runs as an add-on inside that app.
+            </p>
+            <a class="btn btn-outline" [href]="site?.desktopAppUrl || '/setup'" download>Download desktop app</a>
+          </div>
+          <a class="btn btn-outline" routerLink="/" fragment="pricing">Choose plan</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="/assets/banner.jpg" alt="TestingView backtesting on TradingView" loading="eager" width="640" height="400" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section preview" aria-labelledby="preview-title">
+    <div class="container">
+      <h2 id="preview-title" class="section-title">See TestingView in action</h2>
+      <p class="section-lead">Practice entries, stops, targets, and decision-making with real product workflows.</p>
+      <div class="video-tabs" role="tablist">
+        @for (v of videos; track v.title; let i = $index) {
+          <button type="button" role="tab" [attr.aria-selected]="activeVideo === i" (click)="selectVideo(i)">{{ v.title }}</button>
+        }
+      </div>
+      <video
+        class="preview-video"
+        controls
+        preload="none"
+        [poster]="videos[activeVideo].poster"
+        [src]="videos[activeVideo].src"
+        [attr.aria-label]="videos[activeVideo].title"
+      ></video>
+    </div>
+  </section>
+
+  <section id="features" class="section features" aria-labelledby="features-title">
+    <div class="container">
+      <h2 id="features-title" class="section-title">Built for TradingView backtesting</h2>
+      <p class="section-lead">Session management, simulated positions, risk sizing, journaling, and playback controls on top of TradingView. <a routerLink="/features">Explore all features</a>.</p>
+      <ul class="extend-list">
+        <li>Session capital, currency, and start date</li>
+        <li>ChronoShuffle randomized practice</li>
+        <li>Multi-chart, multi-timeframe, multi-symbol testing</li>
+        <li>Advanced statistics, equity curve, and strategy insights</li>
+      </ul>
+      <div class="feature-cards">
+        @for (f of features; track f.title) {
+          <article class="feature-card card">
+            <img [src]="f.gif" [alt]="f.title + ' demonstration'" loading="lazy" width="400" height="225" />
+            <h3>{{ f.title }}</h3>
+            <p>{{ f.text }}</p>
+          </article>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section deep-features">
+    <div class="container deep-grid">
+      <article class="card">
+        <h3>Session workflow</h3>
+        <p>Create or resume sessions with starting balance, currency, and measurable training from any historical point.</p>
+      </article>
+      <article class="card">
+        <h3>Trade testing &amp; risk</h3>
+        <p>Long/short positions with entry, SL/TP, break-even rules, spread/slippage realism on Trader.</p>
+      </article>
+      <article class="card">
+        <h3>Journaling &amp; snapshots</h3>
+        <p>Default and custom journal columns, notes, snapshots, and Excel export where your plan allows.</p>
+      </article>
+      <article class="card">
+        <h3>Statistics &amp; optimization</h3>
+        <p>Win rate, profit factor, expectancy, Sharpe, drawdown, hourly/monthly performance, optimal SL/TP insights.</p>
+      </article>
+      <article class="card">
+        <h3>Playback safety</h3>
+        <p>Prevent candle preview issues, safe timeframe switching, stop lines, predefined hours, and chart event stops.</p>
+      </article>
+      <article class="card">
+        <h3>Multi-chart testing</h3>
+        <p>Watch several timeframes side by side and track trades across symbols in one shared session account.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="pricing" class="section pricing" aria-labelledby="pricing-title">
+    <div class="container">
+      <h2 id="pricing-title" class="section-title">Choose your plan</h2>
+      <p class="section-lead">Start free with session resume and core backtesting. Upgrade for higher trade limits, break-even, advanced stats, export, and multi-session workflows.</p>
+      <div class="pricing-grid">
+        @for (plan of plans; track plan.planId) {
+          <article class="pricing-card card" [class.recommended]="plan.recommended">
+            @if (plan.recommended) {
+              <span class="badge">Recommended</span>
+            }
+            <img [src]="plan.imageUrl" [alt]="plan.name + ' plan'" loading="lazy" width="280" height="160" />
+            <h3>{{ plan.name }}</h3>
+            <p class="price">
+              @if (plan.monthlyPrice === 0) {
+                <span>$0</span>
+              } @else {
+                <span>${{ plan.monthlyPrice }}/mo</span>
+              }
+            </p>
+            @if (plan.trialDays) {
+              <p class="trial">{{ plan.trialDays }}-day free trial</p>
+            }
+            <ul>
+              @for (b of plan.benefits; track b) {
+                <li>{{ b }}</li>
+              }
+            </ul>
+            <a class="btn" [class.btn-primary]="plan.recommended" [class.btn-outline]="!plan.recommended" routerLink="/account">
+              {{ plan.monthlyPrice === 0 ? 'Get started' : 'Subscribe' }}
+            </a>
+          </article>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">Questions &amp; Answers</h2>
+      <p class="section-lead">Top questions about TestingView. <a routerLink="/knowledge-base">Browse the full knowledge base</a>.</p>
+      <app-faq-accordion [items]="faqItems" [showAnswers]="true" />
+    </div>
+  </section>
+</main>
+
+<app-site-footer [discordUrl]="site?.discordUrl || ''" />

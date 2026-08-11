@@ -1,0 +1,63 @@
+1
+00:00:00,000 --> 00:00:05,000
+Switching timeframes in TestingView vs TradingView Replay mode:
+
+2
+00:00:05,000 --> 00:00:08,959
+On the left: Replay mode.
+On the right: TestingView.
+
+3
+00:00:08,959 --> 00:00:12,279
+They're both on the same date, and both on the 1 minute timeframe
+
+4
+00:00:12,279 --> 00:00:16,039
+so both charts show the same price: 111.
+
+5
+00:00:16,059 --> 00:00:18,939
+When we change to a higher timeframe in Replay mode
+
+6
+00:00:18,059 --> 00:00:26,139
+The full candle is already visible, including its closing price: 112.
+
+7
+00:00:27,739 --> 00:00:30,839
+When we do the same in TestingView, the system will step back a little
+
+8
+00:00:30,839 --> 00:00:36,919
+in order to construct the current candle, and will stop at the right time & price, without spoiling it.
+
+9
+00:00:37,100 --> 00:00:42,640
+In replay mode, it's the same for any other timeframe.
+Let's take for example the 4h timeframe:
+
+10
+00:00:43,099 --> 00:00:47,500
+Now you can already see the 4h close: 113,
+which is in the future.
+
+11
+00:00:50,119 --> 00:00:55,000
+In TestingView, switching to 4h timeframe will construct the current 4h candle from its opening time to the current time
+
+12
+00:00:55,000 --> 00:01:00,500
+without spoiling the future price action, leaving us at the same price we expect: 111
+
+13
+00:01:00,500 --> 00:01:06,000
+And of course, switching back to our 1 minute chart will show us on the same candle we left off.
+
+14
+00:01:07,840 --> 00:01:10,500
+All this is possible by enabling
+one option in TestingView.
+
+15
+00:01:10,500 --> 00:01:17,959
+Go to TestingView options: Prevent candle previews when changing timeframes.

@@ -1,0 +1,49 @@
+1
+00:00:00,000 --> 00:00:03,500
+Here’s how fast-forwarding works in TestingView.
+
+2
+00:00:03,500 --> 00:00:09,000
+First, I’m stepping forward by minute: perfect when you want precision.
+
+3
+00:00:11,080 --> 00:00:14,560
+Now I’ll open Settings
+and change the Minimum Step Forward.
+
+4
+00:00:14,900 --> 00:00:18,100
+This controls Step Forward and Fast Forward speed.
+
+5
+00:00:18,520 --> 00:00:21,400
+Let’s switch it from 1 minute to 5 minutes.
+
+6
+00:00:21,400 --> 00:00:25,060
+Smaller steps - more precision.
+Bigger steps - faster movement.
+
+7
+00:00:25,400 --> 00:00:30,900
+Now when I step forward, watch the time bottom-right:
+it jumps 5 minutes at a time.
+
+8
+00:00:30,900 --> 00:00:37,220
+Next, fast forward:
+choose the interval, then click Fast Forward.
+
+9
+00:00:39,300 --> 00:00:41,780
+Notice it won’t teleport mid-candle.
+
+10
+00:00:41,780 --> 00:00:47,720
+Here we’re at 17:29,
+so it goes to the candle close first: 17:59
+
+11
+00:00:48,140 --> 00:00:54,000
+Then it continues forward -
+keeping candle states accurate while you move faster.

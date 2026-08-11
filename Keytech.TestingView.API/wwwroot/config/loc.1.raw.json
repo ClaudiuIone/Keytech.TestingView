@@ -1,0 +1,398 @@
+0
+0 Auto stopping candle playback at {0}
+1 An accidental backward time jump was detected ({0} days).<n>TestingView will exit at this point and restart the session.
+2 Warning
+3 An unusually large time jump was detected ({0} days).<n>If this was unintended, please exit TestingView at this point and restart the session.
+4 play
+5 pause
+6 true
+7 ,
+8 TestingView error
+9 TestingViewCurrentDate
+-1 Cannot create multiple sessions: please upgrade your TestingView.com subscription plan to enable this feature
+-2 Please enter a session name.
+-3 There is already a session with this name.
+-4 Unable to change the replay date: some positions would be still open at that date. Please close all positions before changing the date.
+-5 Unable to change the replay date: there is an open position in this session.
+-6 Cannot resume an existing session: please subscribe to a plan or start a free trial on TestingView.com
+-7 Are you sure you want to delete this session?
+-8 Clone this session (with positions)?
+-9 <span class="ebt-spin" title="Cloning…"></span>
+
+1
+0 getCharts-true
+1 getCharts-false
+2 Chart not found while trying to get position chart
+3 Chart not found while trying to remove shape
+4 getCharts-{0}
+5 admin/user/{0}
+6 admin/user
+7 admin/plans/{0}/permissions
+8 journaling/session-columns/{0}
+9 journaling/positions/columns/{0}
+-1 Copy of
+-2 Clone session failed
+-3 Your first TestingView trade
+-4 Your new position has the risk quantity of {0} ({1} lots).<n><n>This can be adjusted from the Risk setting of the position's tool/drawing properties.
+-5 button[data-qa-id=replay_trading]
+-6 {0} activated. You can open the TestingView panel to view and manage the position.
+-7 Unable to open position: lot size cannot be set at this time
+-8 Exit
+-9 Open
+
+2
+0 journaling/positions/columns/{0}
+1 backtesting/sessions
+2 backtesting/sessions/{0}
+3 getSessionPositions-{0}
+4 backtesting/sessions?allowPastDate={0}
+5 backtesting/sessions/{0}/clone?newName={1}
+6 backtesting/sessions/{0}/parameters
+7 backtesting/sessions/{0}/parameters/{1}
+8 getOrAddSymbol-{0}
+9 backtesting/symbols/{0}
+-1 Buy
+-2 Sell
+-3 Position chart not found for symbol {0}
+-4 BE hit, moving SL to entry
+-5 BE hit, but the auto-BE feature is disabled: please upgrade your TestingView.com subscription plan to enable this feature
+-6 Stop loss hit
+-7 Take profit hit
+-8 SL cannot be higher than the current price
+-9 TP cannot be lower than the current price
+
+3
+0 backtesting/symbols
+1 getSymbolRuleContractSizes-{0}
+2 backtesting/symbol-rule-contract-sizes/{0}
+3 getSessionPositions-{0}
+4 backtesting/positions/{0}
+5 backtesting/positions
+6 backtesting/positions/close
+7 backtesting/positions/be/{0}
+8 backtesting/positions/risk/{0}
+9 backtesting/positions/sl/{0}
+-1 BE level cannot be lower than SL
+-2 header-toolbar-replay
+-3 header-toolbar-backtst
+-4 Close TestingView Journal
+-5 Open TestingView Journal
+-6 [TestingView.com] [{0}] Snapshot on {1} {2}
+-7 Session synced to last active time. You can now open the TestingView journal panel below to view your trades.
+-8 TO BE CHANGED
+-9 Quick tip:<n>To enter a position, simply<n>- draw a Long Position or Short Position on the chart<n>- double click to set its risk percentage or {0}<n>- and start playing some candles
+
+4
+0 backtesting/positions/tp/{0}
+1 backtesting/positions/shapes/{0}
+2 backtesting/positions/shapes/{0}
+3 journaling/positions/snapshots/{0}
+4 backtesting/sessions/{0}/symbols/{1}/last-price
+5 backtesting/positions/{0}/quantity
+6 journaling/export/excel/{0}
+7 ui/addons
+8 https://api.testingview.com/{0}
+9 getUTCOffsetInMinutes-{0}-{1}
+-1 backtst-session-balance-balance-value
+-2 backtst-session-balance-equity-value
+-3 backtst-session-balance-equity
+-4 backtst-stats-button
+-5 snapshot-viewer
+-6 snapshot-viewer-image-container
+-7 snapshot-viewer-counter
+-8 snapshot-viewer-info
+-9 snapshot-viewer-url
+
+5
+0 toTradingViewDateTimeFormat-{0}-{1}
+1 T
+2 S
+3 h
+4 D
+5 W
+6 M
+7 div[class*='tabs']
+8 span[class*='editIcon']
+9 div[class*='scrollable'] div[class*='content']
+-1 button[data-name='time-zone-menu']
+-2 view-snapshots-button
+-3 data-snapshots
+-4 View {0}snapshot{1}
+-5 snapshot-viewer-button
+-6 snapshot-viewer-close-button
+-7 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path stroke="currentColor" stroke-width="1.2" d="m1.5 1.5 15 15m0-15-15 15"></path></svg>
+-8 snapshot-viewer-delete-button
+-9 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path fill="currentColor" d="M12 4h3v1h-1.04l-.88 9.64a1.5 1.5 0 0 1-1.5 1.36H6.42a1.5 1.5 0 0 1-1.5-1.36L4.05 5H3V4h3v-.5C6 2.67 6.67 2 7.5 2h3c.83 0 1.5.67 1.5 1.5V4ZM7.5 3a.5.5 0 0 0-.5.5V4h4v-.5a.5.5 0 0 0-.5-.5h-3ZM5.05 5l.87 9.55a.5.5 0 0 0 .5.45h5.17a.5.5 0 0 0 .5-.45L12.94 5h-7.9Z"></path></svg>
+
+6
+0 div[class*='footer']
+1 span[role='button'][data-role='listbox']
+2 .select-analysis-time-button
+3 button[name='cancel']
+4 backtst-dialog-table
+5 analysis-timespan
+6 backtst-actions
+7 select-analysis-time-button
+8 Add to journal
+9 predefined-times
+-1 snapshot-viewer-image-container
+-2 Snapshot
+-3 snapshot-viewer-nav-button
+-4 snapshot-viewer-prev
+-5 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-width="1.2" d="M17 22.5 6.85 12.35a.5.5 0 0 1 0-.7L17 1.5"></path></svg>
+-6 snapshot-viewer-copy-url
+-7 Previous
+-8 Copy chart link
+-9 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><g fill="none" fill-rule="evenodd" stroke="currentColor"><path d="M13.111 18.5H10.5a1 1 0 0 1-1-1v-11a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-8.389z"></path><path d="M18.5 20v1.5a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1v-11a1 1 0 0 1 1-1H8"></path></g></svg>
+
+7
+0 backtst-dialog-section
+1 Taking snapshots
+2 backtst-option-EnablePredefinedTimes
+3 checked
+4 tbody tr input[type='time']
+5 Do you want to take separate snapshots of each chart?
+6 Timeframe: {0}
+7 goto-time
+8 Next occurrence
+9 delete-time
+-1 Error taking snapshots: {0}
+-2 snapshot-viewer-next
+-3 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"><g transform="scale(-1,1) translate(-24,0)"><path stroke="currentColor" stroke-linecap="round" stroke-width="1.2" d="M17 22.5 6.85 12.35a.5.5 0 0 1 0-.7L17 1.5"></path></g></svg>
+-4 Copied!
+-5 Copy failed
+-6 Could not copy snapshot URL to clipboard.
+-7 ArrowLeft
+-8 ArrowRight
+-9 Escape
+
+8
+0 Delete
+1 Unable to navigate to the selected date. Please contact support.
+2 Could not find next valid market session for the specified time
+3 Cannot go to the specified time while there are open positions
+4 Add new time
+5 00:00
+6 backtst-dialog-options-section-custom-date
+7 custom-date-time
+8 Or, go to a custom date/time
+9 span[class*=title]
+-1 Delete
+-2 backtst-dialog-section-title
+-3 Options
+-4 backtst-option
+-5 MinReplayResolution
+-6 The minimum replay interval when clicking the step forward button (Shift + ⇨). When skipping candles, all increments are based on this interval. By default, it's the minimum supported by your TradingView subscription plan.
+-7 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path fill="currentColor" d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Zm1-12a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM8.5 9.5H7V8h3v6H8.5V9.5Z"></path></svg>
+-8 PreventCandlePreviews
+-9 Prevent candle previews when changing timeframes
+
+9
+0 Usage info
+1 Cannot go to the specified date/time while there are open positions. Please close all positions before jumping to another date.
+2 The selected date/time must be in the future.
+3 backtst-dialog-options-section
+4 Auto stop at predefined times
+5 When playing candles, automatically stop the playback at specified times. Useful for regular events like session opens, news releases or your own schedule and routine.
+6 backtst-journal-button
+7 300
+8 900
+9 1800
+-1 When you change timeframes, TradingView may briefly show an inaccurate preview of the current candle. When this option is enabled, the chart will automatically step back slightly and replay forward to rebuild the candle correctly, ensuring the final candle state is accurate.
+-2 AutoSnapshot
+-3 Auto capture trade snapshots
+-4 Save into the TestingView journal panel automatic snapshots of the chart during and after a trade: when the position opens, when either TP or SL gets hit, when BE gets hit, or when the trade is manually closed.
+-5 CanModifyQty
+-6 Allow modifying quantity
+-7 Enable the ability to modify the quantity (lots) of each trade in the TestingView panel.
+-8 Journal Columns <span>({0})</span>
+-9 backtst-journal-options-section
+
+-1
+0 3600
+1 7200
+2 14400
+3 86400
+4 5m
+5 15m
+6 30m
+7 1h
+8 2h
+9 4h
+-1 MultipleBacktestingSessions
+-2 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M18.75 7.38h-3.37c.06-.3.09-.59.09-.88 0-1.87-1.37-3.25-3.6-3.25-1.77 0-2.22 1.9-2.95 3.08-.3.48-.67.9-1.01 1.3H7.9c-.6.7-.9.93-1.18.93h-.1c-.23-.2-.53-.31-.87-.31h-2.5c-.69 0-1.25.5-1.25 1.13v9c0 .62.56 1.12 1.25 1.12h2.5c.34 0 .64-.12.86-.31h.1c1.13 0 2.63 1.56 4.98 1.56h.83c2.44 0 3.86-1.51 3.9-3.56.5-.7.73-1.6.63-2.45.14-.28.24-.57.3-.87h1.4A3.27 3.27 0 0 0 22 10.63a3.3 3.3 0 0 0-3.25-3.26Zm0 4.62h-3.56c.5.57.57 1.67-.19 2.38.44.77.07 1.79-.5 2.1.25 1.53-.4 2.4-1.98 2.4h-.83c-1.78 0-3.02-1.4-4.69-1.55v-6.9c.99-.13 1.68-.84 2.3-1.56.45-.49.86-.98 1.21-1.55.57-.92 1.02-2.2 1.37-2.2.9 0 1.71.35 1.71 1.38 0 1.38-1.03 2.07-1.03 2.75h6.19c.72 0 1.38.64 1.38 1.38A1.4 1.4 0 0 1 18.75 12ZM5.44 17a.94.94 0 1 1-1.88 0 .94.94 0 0 1 1.88 0Z"></path></svg>
+-3 Start &nbsp;
+-4 Start backtesting
+-5 Cancel session
+-6 body
+-7 CanContinueSession
+-8 JournalExport
+-9 AdvancedMetrics
+
+-2
+0 1D
+1 When jumping to a specific time, a brief playback will take place just before that time to load indicators and prevent seeing future price action (by default, TradingView displays the full candle when navigating to a time that is mid-candle).
+2 button[name='submit']
+3 backtst-prompt-dialog
+4 backtst-prompt-dialog-content
+5 OK
+6 Cancel
+7 TestingView
+8 Go to Date/Time
+9 Analysis Times
+-1 div.replay_trading:not(.js-hidden)
+-2 #ACCOUNTCURRENCY#
+-3 [class*='container']:has(div[class*='strategyGroup'])
+-4 div[class*='tabsContainer']
+-5 div[class*='container']:has(div[class*='title']):has(div[class*='text'])
+-6 #INDEX#
+-7 #DIRECTION#
+-8 #ENTRYPRICE#
+-9 #SYMBOLCURRENCY#
+
+-3
+0 emoji
+1 Close
+2 <div class="discord-cta">Need help? Join the <a href="https://discord.gg/kJSmwSxBpW" target="_blank">TestingView Discord</a> community!</div>
+3 backtst-dialog-section-sessions
+4 intro
+5 Please ensure your <a href="https://TestingView.com" target="_blank">TestingView.com</a> subscription plan is active for your TradingView username: <span contenteditable readonly spellcheck="false">{0}</span>
+6 Unsupported response format: {0}
+7 <table class="backtst-dialog-table backtst-sessions-table">
+8 tr[data-session-id='{0}'] .positions-counter
+9 tr[data-session-id='{0}'] .session-balance
+-1 Winrate
+-2 Profit factor
+-3 R:R ratio
+-4 Sharpe ratio
+-5 Winning trades
+-6 Losing trades
+-7 BE trades
+-8 Win streak
+-9 Loss streak
+
+-4
+0 data-session-id='{0}'
+1 selected-session
+2 session-section
+3 Session
+4 session-name
+5 Chart date
+6 session-bar-date
+7 Set another backtesting date
+8 initial-value
+9 Balance
+-1 BE streak
+-2 Max drawdown
+-3 N/A
+-4 Exporting session statistics...
+-5 Entry Date
+-6 Entry Time
+-7 Exit Date
+-8 Exit Time
+-9 Entry Price
+
+-5
+0 session-capital
+1 session-balance
+2 session-stats-info
+3 positions-counter
+4 Positions
+5 Last update
+6 resume-session
+7 Resume session
+8 Go &nbsp;
+9 delete-session
+-1 Exit Price
+-2 SL
+-3 TP
+-4 BE
+-5 Session statistics exported successfully!
+-6 No positions found to export.
+-7 Exporting session statistics...
+-8 Unable to export: please upgrade your TestingView.com subscription plan to enable this feature
+-9 div[class*='wrapper']:has(div[class*='arrow'])
+
+-6
+0 Delete session
+1 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18"><path fill="currentColor" d="M12 4h3v1h-1.04l-.88 9.64a1.5 1.5 0 0 1-1.5 1.36H6.42a1.5 1.5 0 0 1-1.5-1.36L4.05 5H3V4h3v-.5C6 2.67 6.67 2 7.5 2h3c.83 0 1.5.67 1.5 1.5V4ZM7.5 3a.5.5 0 0 0-.5.5V4h4v-.5a.5.5 0 0 0-.5-.5h-3ZM5.05 5l.87 9.55a.5.5 0  0 0 .5.45h5.17a.5.5 0 0 0 .5-.45L12.94 5h-7.9Z"></path></svg>
+2 backtst-session-settings-add-new-session-container
+3 backtst-dialog-section-plan
+4 Active plan
+5 backtst-loader
+6 New session
+7 data-session-id
+8 My TestingView session
+9 Pick a start date (make sure your chart data and TradingView plan supports it)
+-1 <style>div.chart-toolbar.chart-controls-bar button[data-name="time-zone-menu"] div.js-button-text {display:none}</style>
+-2 ConfirmEntries
+-3 Confirm entries
+-4 When opening a new position, show a yes/no dialog to confirm the position should be opened
+-5 New trade
+-6 getSessionTimeframeResolutions-{0}
+-7 ui/sessions/{0}/timeframe-resolutions
+-8 ui/sessions/{0}/timeframe-resolutions/{1}
+-9 Delete column
+
+-7
+0 session-capital-value
+1 Capital
+2 100000
+3 session-capital-currency
+4 USD
+5 EUR
+6 GBP
+7 JPY
+8 CHF
+9 CAD
+-1 replayResolutions
+-2 div[class*="wrapper-"]:has(button[data-qa-id="trade-panel-button"])
+-3 header-toolbar-alerts
+-4 #header-toolbar-trade-desktop
+-5 TestingView.com
+-6 Virtual Run-up
+-7 Virtual Drawdown
+-8 Virtual BE Run-up
+-9 No data
+
+-8
+0 CHF
+1 HKD
+2 JPY
+3 NOK
+4 RUB
+5 SEK
+6 SGD
+7 TRY
+8 ZAR
+9 BTC
+-1 There are no positions in the current session to compute statistics.
+-2 session-stats-backdrop
+-3 blurred
+-4 Unable to show the advanced statistics: please upgrade your TestingView.com subscription plan to enable this feature
+-5 backtst-session-loader
+-6 backtst-session-loader-spinner
+-7 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" opacity="0.2"></circle><path d="M22 12a10 10 0 0 0-10-10" stroke="currentColor" stroke-width="2" fill="none"></path></svg>
+-8 backtst-session-loader-text
+-9 Loading session...
+
+-9
+0 ETH
+1 MYR
+2 KRW
+3 USDT
+4 INR
+5 save-session
+6 Please enter a session name.
+7 There is already a session with this name.
+8 Please enter a valid capital amount.
+9 cancel-session
+-1 The maximum favorable excursion (MFE) reached before breakeven was hit (only applicable when a BE price is set after entry)
+-2 The maximum favorable excursion (MFE) reached while in the position
+-3 The maximum adverse excursion (MAE) reached while in the position
+-4 The running total of all closed position profits/losses up to and including this position
+-5 Navigate directly to a specified date/time.<n>Note: jumping to a date/time will stop analysing optimal SL/TP & BE for the previous trades (see Statistics panel)
+-6 Please switch to a lower timeframe to accurately monitor your open position.
+-7 Step size too big
+-8 Open trade
+-9 To open a new position, use the Long/Short Position tool/drawing, then play the candles until its entry price is hit<n><n>For more how-tos, please watch instruction videos on TestingView.com

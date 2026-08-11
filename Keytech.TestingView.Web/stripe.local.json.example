@@ -1,0 +1,9 @@
+{
+  "Stripe": {
+    "PublishableKey": "pk_live_YOUR_PUBLISHABLE_KEY",
+    "SecretKey": "sk_live_YOUR_SECRET_KEY",
+    "WebhookSecret": "whsec_YOUR_WEBHOOK_SIGNING_SECRET",
+    "ExplorerPriceId": "",
+    "TraderPriceId": ""
+  }
+}

@@ -1,0 +1,25 @@
+<footer class="footer section">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="/assets/logo.svg" alt="" width="48" height="48" aria-hidden="true" />
+      <p><strong>TestingView.com</strong> — backtesting sessions, journaling, and statistics on TradingView.</p>
+    </div>
+
+    <div class="footer-cta card">
+      <h2>Join the community</h2>
+      <p>Get support, share feedback, and connect with other traders on Discord.</p>
+      <a class="btn btn-primary" [href]="discordUrl" target="_blank" rel="noopener noreferrer">Join Discord</a>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer">
+      <a routerLink="/terms">Terms &amp; Conditions</a>
+      <a routerLink="/privacy">Privacy Policy</a>
+      <a routerLink="/refund-policy">Refund Policy</a>
+      <a routerLink="/accessibility">Accessibility Statement</a>
+      <a routerLink="/features">Features</a>
+      <a routerLink="/knowledge-base">Knowledge Base</a>
+      <a routerLink="/" fragment="pricing">Pricing</a>
+    </nav>
+  </div>
+  <p class="container copyright">&copy; {{ year }} TestingView.com. All rights reserved.</p>
+</footer>

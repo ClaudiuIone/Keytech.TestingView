@@ -1,0 +1,43 @@
+<app-site-header />
+
+<main class="section kb-page">
+  <div class="container">
+    <h1>Knowledge Base</h1>
+    <p class="section-lead">
+      Full Q&amp;A for TestingView — sessions, trades, journaling, statistics, playback, and plans.
+      <a routerLink="/features">See feature overview</a>.
+    </p>
+
+    @if (loadError) {
+      <p class="muted">Knowledge base content is temporarily unavailable. Please try again later.</p>
+    } @else {
+      <div class="kb-layout">
+        <nav class="kb-nav" aria-label="Categories">
+          @for (cat of categories; track cat.slug) {
+            <a class="kb-nav-link" [href]="'#' + cat.slug" (click)="scrollToCategory(cat.slug, $event)">{{ cat.title }}</a>
+          }
+        </nav>
+
+        <div class="kb-content">
+          @for (cat of categories; track cat.slug) {
+            <section class="kb-section" [id]="cat.slug">
+              <h2>{{ cat.title }}</h2>
+              @for (item of cat.items; track item.slug) {
+                <article class="kb-qa" [id]="item.slug">
+                  <h3>{{ item.question }}</h3>
+                  <p class="kb-answer">{{ item.answer }}</p>
+                </article>
+              }
+            </section>
+          }
+          <p class="kb-cta">
+            <a routerLink="/account">Manage your account</a> ·
+            <a routerLink="/" fragment="pricing">View pricing</a>
+          </p>
+        </div>
+      </div>
+    }
+  </div>
+</main>
+
+<app-site-footer />

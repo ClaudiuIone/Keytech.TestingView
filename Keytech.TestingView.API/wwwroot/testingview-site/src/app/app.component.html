@@ -1,0 +1,28 @@
+<div class="app-shell">
+  <header class="topbar">
+    <a class="brand" routerLink="/" aria-label="TestingView home">
+      <span class="brand-mark" aria-hidden="true">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </span>
+      <span class="brand-text">TestingView.com</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Home</a>
+      <a routerLink="/features" routerLinkActive="active">Features</a>
+      <a routerLink="/pricing" routerLinkActive="active">Pricing</a>
+      <a routerLink="/qa" routerLinkActive="active">Q&amp;A</a>
+    </nav>
+
+    <a class="login-link" href="#" (click)="$event.preventDefault()">
+      <span class="login-icon" aria-hidden="true">?</span>
+      <span>Log In</span>
+    </a>
+  </header>
+
+  <main class="route-frame">
+    <router-outlet />
+  </main>
+</div>

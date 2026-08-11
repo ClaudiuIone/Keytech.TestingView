@@ -1,0 +1,90 @@
+1
+00:00:00,000 --> 00:00:03,000
+Opening a position in TestingView
+
+2
+00:00:03,000 --> 00:00:07,000
+Draw a Long Position on the chart.
+
+3
+00:00:07,000 --> 00:00:10,000
+This becomes your trade template.
+
+4
+00:00:10,000 --> 00:00:12,539
+Open its settings to define risk.
+
+5
+00:00:12,619 --> 00:00:15,819
+Risk can be a percentage of your account…
+
+6
+00:00:15,819 --> 00:00:21,800
+…or a fixed cash amount, like $500.
+
+7
+00:00:21,800 --> 00:00:25,719
+When it reaches the entry line, the trade is on.
+
+8
+00:00:25,719 --> 00:00:30,199
+The trade appears instantly in the journal below.
+
+9
+00:00:30,199 --> 00:00:33,359
+See live entry, stop, target, and PnL.
+
+10
+00:00:33,359 --> 00:00:38,339
+You can also track run-up and drawdown, along with many other info that are customizable.
+
+11
+00:00:38,339 --> 00:00:43,259
+Click the camera icon to save a snapshot.
+
+12
+00:00:43,259 --> 00:00:45,240
+Want break-even protection?
+
+13
+00:00:45,240 --> 00:00:47,060
+Click the small circle next to the trade.
+
+14
+00:00:47,060 --> 00:00:49,740
+A BE line appears—
+drag it anywhere you want.
+
+15
+00:00:49,899 --> 00:00:53,219
+When price touches it,
+SL moves to entry.
+
+16
+00:00:53,219 --> 00:00:57,039
+Now the trade is at break-even risk.
+
+17
+00:00:57,039 --> 00:01:01,519
+Take another snapshot at this stage.
+
+18
+00:01:01,519 --> 00:01:04,179
+Keep replaying…
+
+19
+00:01:04,179 --> 00:01:08,500
+Entry was tapped again, so closing at 0.
+
+20
+00:01:08,500 --> 00:01:12,500
+Take a final snapshot to mark the exit.
+
+21
+00:01:12,500 --> 00:01:17,000
+Add notes for the trade in the journal.
+
+22
+00:01:17,000 --> 00:01:27,599
+Then open the viewer
+and review all 3 snapshots.

@@ -1,0 +1,118 @@
+1
+00:00:00,000 --> 00:00:06,000
+This is the Statistics screen in TestingView —
+where replay turns into hard numbers.
+
+2
+00:00:06,000 --> 00:00:12,000
+At the top you get instant KPIs:
+win rate, profit factor, average R:R…
+
+3
+00:00:12,000 --> 00:00:16,000
+Sharpe ratio, expectancy,
+max drawdown, and max run-up.
+
+4
+00:00:16,000 --> 00:00:20,500
+In this run we’re looking at 57% win rate
+and a 1.33 profit factor.
+
+5
+00:00:20,500 --> 00:00:24,500
+But the real power is this:
+every chart is clickable.
+
+6
+00:00:24,500 --> 00:00:29,500
+Click any tile to enlarge it
+and drill into the details.
+
+7
+00:00:29,500 --> 00:00:34,500
+Open the equity curve
+and highlight the win streak instantly.
+
+8
+00:00:34,500 --> 00:00:39,500
+Click Max Drawdown to see the exact dip —
+5.6% and -$8,098 in this example.
+
+9
+00:00:39,500 --> 00:00:46,000
+And Max Time in Drawdown shows how long
+you were underwater before recovery.
+
+10
+00:00:46,000 --> 00:00:50,500
+Inside the enlarged performance view,
+you’ve got a Forecast button.
+
+11
+00:00:50,500 --> 00:00:56,500
+One click shows an expectation range —
+a fast sanity check for what’s “normal”.
+
+12
+00:00:56,500 --> 00:01:02,500
+Back on the dashboard:
+Performance by Hour shows when you’re sharp…
+
+13
+00:01:02,500 --> 00:01:06,500
+…and when you’re leaking money.
+
+14
+00:01:06,500 --> 00:01:10,500
+Monthly Profit shows consistency —
+how often you’re profitable month to month.
+
+15
+00:01:10,500 --> 00:01:14,500
+Now the game-changer:
+Optimal SL.
+
+16
+00:01:14,500 --> 00:01:20,500
+It’s a “what-if” simulator:
+what if your stops were larger or smaller?
+
+17
+00:01:20,500 --> 00:01:27,000
+Move the slider and TestingView recalculates
+the outcome instantly.
+
+18
+00:01:27,000 --> 00:01:33,000
+Including TP hits and the full equity curve,
+versus your original approach.
+
+19
+00:01:33,000 --> 00:01:37,500
+You’re not guessing stops —
+you’re testing a hypothesis.
+
+20
+00:01:37,500 --> 00:01:42,500
+Same idea for targets:
+Optimal TP.
+
+21
+00:01:42,500 --> 00:01:47,500
+Adjust TP size and see the impact instantly:
+hit rate and performance.
+
+22
+00:01:47,500 --> 00:01:53,500
+You can see when a bigger TP helps…
+and when pushing it too far breaks results.
+
+23
+00:01:53,500 --> 00:01:58,000
+And for realism: trading costs —
+spreads and commissions.
+
+24
+00:01:58,000 --> 00:02:00,500
+Set them as % per lot/contract across all trades,
+then copy to clipboard or export to Excel.

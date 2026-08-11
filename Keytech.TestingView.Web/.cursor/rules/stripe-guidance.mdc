@@ -1,0 +1,12 @@
+---
+description: Always apply Stripe plugin best practices when payments or Stripe are discussed
+alwaysApply: true
+---
+
+When the task involves Stripe, billing, checkout, subscriptions, webhooks, or API keys:
+
+1. Follow the **stripe-best-practices** skill (Checkout Sessions, webhook signatures, no secrets in repo).
+2. Use the **Stripe MCP** for Dashboard/API tasks when available.
+3. See **stripe-integration** rule for TestingView-specific endpoints and deploy steps.
+
+After billing/Stripe code changes on this site, redeploy with `Keytech.TestingView.Web.FE/deploy/Deploy-LocalIis.ps1`.

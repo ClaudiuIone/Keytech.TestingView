@@ -1,0 +1,102 @@
+<section class="qa-page">
+  <div class="qa-shell">
+    <div class="qa-head">
+      <h1>Questions &amp; Answers</h1>
+      <label class="search-box" aria-label="Search questions">
+        <input
+          type="search"
+          placeholder="Looking for something?"
+          [value]="searchTerm"
+          (input)="setSearchTerm($any($event.target).value)"
+        />
+        <span class="search-icon" aria-hidden="true">?</span>
+      </label>
+    </div>
+
+    <div class="category-strip">
+      <button
+        class="arrow"
+        type="button"
+        aria-label="Previous category group"
+        [disabled]="!canShiftLeft"
+        (click)="shiftCategories(-1)"
+      >
+        ‹
+      </button>
+
+      <div class="category-track">
+        @for (category of visibleCategories; track category.id) {
+          <button
+            type="button"
+            class="category-button"
+            [class.active]="category.id === activeCategoryId"
+            (click)="selectCategory(category.id)"
+          >
+            <span class="cat-icon" aria-hidden="true">{{ category.icon }}</span>
+            <span class="cat-label">{{ category.title }}</span>
+          </button>
+        }
+      </div>
+
+      <button
+        class="arrow"
+        type="button"
+        aria-label="Next category group"
+        [disabled]="!canShiftRight"
+        (click)="shiftCategories(1)"
+      >
+        ›
+      </button>
+    </div>
+
+    <div class="qa-list">
+      @if (visibleItems.length === 0) {
+        <div class="empty-state">
+          No results for “{{ searchTerm }}” in <strong>{{ activeCategory.title }}</strong>.
+        </div>
+      }
+
+      @for (item of visibleItems; track item.question) {
+        <article class="qa-item" [class.open]="isOpen(item)">
+          <button class="qa-trigger" type="button" (click)="toggleItem(item)">
+            <span class="qa-index">{{ formatIndex(item.index) }}</span>
+            <span class="qa-copy">
+              <span class="qa-question">{{ item.question }}</span>
+              @if (isOpen(item)) {
+                <span class="qa-answer" [innerHTML]="item.answer"></span>
+              }
+            </span>
+            <span class="qa-chevron" aria-hidden="true">?</span>
+          </button>
+        </article>
+      }
+    </div>
+  </div>
+
+  <footer class="community-footer">
+    <div class="community-shell">
+      <p>
+        We\'re most active on Discord - come ask questions, share setups, and connect with other traders.
+      </p>
+      <p>Follow us elsewhere for updates, feature drops, and tips.</p>
+
+      <a class="discord-tile" href="#" (click)="$event.preventDefault()" aria-label="Discord">??</a>
+      <p class="stay">Stay in the loop!</p>
+
+      <div class="social-row" aria-label="Social links">
+        <a href="#" (click)="$event.preventDefault()">?</a>
+        <a href="#" (click)="$event.preventDefault()">f</a>
+        <a href="#" (click)="$event.preventDefault()">??</a>
+        <a href="#" (click)="$event.preventDefault()">?</a>
+        <a href="#" (click)="$event.preventDefault()">?</a>
+      </div>
+
+      <div class="policy-row">
+        <a href="#" (click)="$event.preventDefault()">Terms &amp; Conditions</a>
+        <a href="#" (click)="$event.preventDefault()">Privacy Policy</a>
+        <a href="#" (click)="$event.preventDefault()">Refund Policy</a>
+        <a href="#" (click)="$event.preventDefault()">Accessibility Statement</a>
+      </div>
+    </div>
+  </footer>
+</section>

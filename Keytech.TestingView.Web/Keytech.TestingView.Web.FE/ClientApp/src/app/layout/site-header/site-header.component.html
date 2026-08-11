@@ -1,0 +1,26 @@
+<header class="header" [class.menu-open]="menuOpen">
+  <div class="container header-inner">
+    <a routerLink="/" class="brand" aria-label="TestingView.com home">
+      <img src="/assets/logo.svg" alt="TestingView logo" width="40" height="40" />
+      <span>TestingView.com</span>
+    </a>
+
+    <button type="button" class="menu-toggle" (click)="toggleMenu()" [attr.aria-expanded]="menuOpen" aria-controls="main-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="main-nav" class="nav" aria-label="Main">
+      <a routerLink="/" fragment="home">Home</a>
+      <a routerLink="/features">Features</a>
+      <a routerLink="/" fragment="pricing">Pricing</a>
+      <a routerLink="/" fragment="faq">Q&amp;A</a>
+      <a routerLink="/knowledge-base">Knowledge Base</a>
+      @if (loggedIn) {
+        <a routerLink="/account" class="account-pill">{{ planName || 'Account' }}</a>
+      } @else {
+        <a routerLink="/account" class="btn btn-primary btn-sm">Account / Login</a>
+      }
+    </nav>
+  </div>
+</header>

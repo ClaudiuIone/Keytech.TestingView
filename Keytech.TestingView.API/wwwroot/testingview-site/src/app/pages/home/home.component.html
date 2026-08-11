@@ -1,0 +1,53 @@
+<section class="home-page">
+  <section class="hero-gradient">
+    <div class="hero-content">
+      <h1>The TradingView Backtesting Extension</h1>
+      <p>
+        Backtest and simulate using TradingView enhanced replay capabilities,
+        your TradingView charts, your indicators, and your layouts.
+      </p>
+
+      <div class="hero-cta">
+        <a class="cta-btn" href="#" (click)="$event.preventDefault()">?&nbsp; Get extension</a>
+        <a class="cta-btn ghost" href="#" (click)="$event.preventDefault()">?&nbsp; Desktop app</a>
+      </div>
+
+      <div class="showcase-wrap">
+        <article class="showcase-main" aria-label="TestingView performance dashboard preview">
+          <div class="main-header-row"></div>
+          <div class="equity-line"></div>
+          <div class="grid-row bars-cyan"></div>
+          <div class="grid-row bars-mix"></div>
+          <div class="grid-row bars-gold"></div>
+          <div class="impact-row">
+            <span></span>
+          </div>
+        </article>
+
+        <div class="showcase-mini-list">
+          @for (card of galleryCards; track card.title) {
+            <article [class]="'mini-card ' + card.tone">
+              <div class="mini-screen"></div>
+              <h3>{{ card.title }}</h3>
+              <p>{{ card.subtitle }}</p>
+            </article>
+          }
+        </div>
+
+        <button class="next-button" type="button" aria-label="Next gallery slide">Next &nbsp;?</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="smart-block" id="highlights">
+    <div class="smart-inner">
+      <h2>Smart. Neat. Simulation. Made for TradingView.</h2>
+      <p class="smart-subtitle">What makes TestingView.com a fully-fledged backtesting tool?</p>
+      <ul>
+        @for (highlight of highlights; track highlight) {
+          <li>{{ highlight }}</li>
+        }
+      </ul>
+    </div>
+  </section>
+</section>

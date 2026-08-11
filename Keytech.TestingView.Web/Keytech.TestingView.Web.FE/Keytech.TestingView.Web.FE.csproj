@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Keytech.TestingView.Web.FE</RootNamespace>
+    <UserSecretsId>testingview-web-fe-secrets</UserSecretsId>
+    <SpaRoot>ClientApp\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Keytech.TestingView.Web.FE.Tests\**" />
+    <Content Remove="Keytech.TestingView.Web.FE.Tests\**" />
+    <EmbeddedResource Remove="Keytech.TestingView.Web.FE.Tests\**" />
+    <None Remove="Keytech.TestingView.Web.FE.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Keytech.TestingView.Data\Keytech.TestingView.Data\Keytech.TestingView.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.16.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.11" />
+    <PackageReference Include="Stripe.net" Version="47.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="8.0.11" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <SkipSpaBuild>false</SkipSpaBuild>
+    <DesktopAppProject>$(MSBuildThisFileDirectory)..\..\Keytech.TestingView.App\Keytech.TestingView.App.csproj</DesktopAppProject>
+    <DesktopAppExeName>TradingView x TestingView.exe</DesktopAppExeName>
+  </PropertyGroup>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish" Condition="'$(SkipSpaBuild)' != 'true'">
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build -- --configuration production" ContinueOnError="true" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr -- --configuration production" Condition="'$(BuildSSR)' == 'true'" ContinueOnError="true" />
+  </Target>
+
+</Project>

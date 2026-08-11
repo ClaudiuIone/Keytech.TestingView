@@ -1,0 +1,44 @@
+.footer {
+  border-top: 1px solid var(--tv-border);
+  margin-top: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.footer-brand p {
+  color: var(--tv-cream-muted);
+  max-width: 40ch;
+}
+
+.footer-cta h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.footer-links {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+}
+
+.footer-links a {
+  color: var(--tv-cream-muted);
+  font-size: 0.9rem;
+}
+
+.copyright {
+  margin-top: 2rem;
+  color: var(--tv-cream-muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

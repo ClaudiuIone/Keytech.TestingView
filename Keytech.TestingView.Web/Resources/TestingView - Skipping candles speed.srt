@@ -1,0 +1,41 @@
+1
+00:00:00,000 --> 00:00:10,979
+Whenever we skip candles in TestingView, 
+the time increment is, by default, minute by minute.
+
+2
+00:00:11,279 --> 00:00:15,859
+That can be changed in TestingView Options
+by setting Minimum Step Forward.
+
+3
+00:00:15,859 --> 00:00:21,000
+Depending on your TradingView subscription,
+you can go from seconds up to hours at a time.
+
+4
+00:00:21,000 --> 00:00:26,119
+In this example, we set
+Minimum Step Forward to 5 minutes...
+
+5
+00:00:26,640 --> 00:00:32,459
+Now the bottom-right timestamp moves
+5 minutes with each step forward.
+
+6
+00:00:34,700 --> 00:00:40,179
+Switch it again - this time to 30 minutes...
+
+7
+00:00:40,179 --> 00:00:44,179
+...and each step advances accordingly.
+
+8
+00:00:44,179 --> 00:00:47,679
+This setting isn't just for stepping forward.
+
+9
+00:00:47,679 --> 00:01:02,439
+It also controls the speed and granularity
+when fast-forwarding or auto-playing candles.

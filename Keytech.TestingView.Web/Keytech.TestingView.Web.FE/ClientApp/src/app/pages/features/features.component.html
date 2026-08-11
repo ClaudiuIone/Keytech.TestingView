@@ -1,0 +1,27 @@
+<app-site-header />
+
+<main class="section features-page">
+  <div class="container">
+    <p class="eyebrow">Features</p>
+    <h1>What you can do with TestingView</h1>
+    <p class="section-lead">{{ intro }}</p>
+    <p class="features-cta">
+      <a class="btn btn-primary" routerLink="/account">Get started</a>
+      <a class="btn btn-outline" routerLink="/knowledge-base">Knowledge base</a>
+    </p>
+
+    @for (block of blocks; track block.title) {
+      <article class="feature-block card">
+        <h2>{{ block.title }}</h2>
+        <p class="feature-summary">{{ block.summary }}</p>
+        <ul>
+          @for (point of block.points; track point) {
+            <li>{{ point }}</li>
+          }
+        </ul>
+      </article>
+    }
+  </div>
+</main>
+
+<app-site-footer />

@@ -1,0 +1,16 @@
+<app-site-header />
+
+<main class="section">
+  <div class="container narrow">
+    <a routerLink="/knowledge-base">&larr; Knowledge Base</a>
+    @if (notFound) {
+      <h1>Not found</h1>
+      <p>This article could not be found.</p>
+    } @else {
+      <h1>{{ question }}</h1>
+      <article class="answer">{{ answer }}</article>
+    }
+  </div>
+</main>
+
+<app-site-footer />
